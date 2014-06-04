@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prs.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_won"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/score_won"
+            android:textSize="24sp" />
+
+	    <TextView
+	        android:id="@+id/int_score_won"
+	        android:layout_height="37dp"
+	        android:layout_width="50dp"
+	        android:text="0"
+	        android:textSize="24sp"
+	        android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    <TextView
+	        android:id="@+id/txt_lost"
+	        android:layout_width="match_parent"
+	        android:layout_height="37dp"
+	        android:textSize="24sp"
+	        android:layout_marginTop="10sp"
+	        android:text="@string/score_lost" />
+	
+	    <TextView
+	        android:id="@+id/int_score_lost"
+	        android:layout_width="wrap_content"
+	        android:layout_height="37dp"
+	        android:text="0"
+	        android:textSize="24sp"
+	        android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="136dp"
+        android:orientation="horizontal" >
+	    
+        <ImageView
+	        android:id="@+id/img_rock"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="sendRock"
+	        android:layout_marginLeft="10sp"
+	        android:src="@drawable/rock" />
+        
+        <ImageView
+	        android:id="@+id/img_paper"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="sendPaper"
+	        android:layout_marginLeft="10sp"
+	        android:src="@drawable/paper" />
+        
+        <ImageView
+	        android:id="@+id/img_scissors"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="sendScissors"
+	        android:layout_marginLeft="10sp"
+	        android:src="@drawable/scissors" />
+         
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.16"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:text="@string/txt_description"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
